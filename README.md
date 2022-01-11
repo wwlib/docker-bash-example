@@ -1,0 +1,59 @@
+# docker-bash-exaple
+
+### build
+```
+docker build -f Dockerfile -t bashexample:bashexample "."
+```
+
+### run
+```
+docker run -it bashexample:bashexample
+```
+
+This will start a bash prompt, like:
+
+```
+root@f56f6421a21e:/usr/src/app#
+```
+
+Try it out using:
+```
+# cat /etc/issue
+Debian GNU/Linux 9 \n \l
+
+# cat /etc/os-release
+PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
+NAME="Debian GNU/Linux"
+VERSION_ID="9"
+VERSION="9 (stretch)"
+VERSION_CODENAME=stretch
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+
+# node --version
+v14.18.2
+
+# git version
+git version 2.11.0
+
+# pwd
+/usr/src/app
+
+# ls -al
+total 16
+drwxr-xr-x 1 root root 4096 Jan 11 22:25 .
+drwxr-xr-x 1 root root 4096 Jan 11 22:25 ..
+-rw-r--r-- 1 root root   30 Jan 11 22:11 index.js
+
+# node index.js
+Hello, world!
+```
+
+Now you have a Debian linux shell.
+
+To exit:
+```
+# exit
+```
