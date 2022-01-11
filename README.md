@@ -1,6 +1,11 @@
-# docker-bash-exaple
+# docker-bash-example
+
+A simple docker example that provides a debian linux os with node 14 installed.
+
+This example image is available on dockerhub: https://hub.docker.com/repository/docker/wwlib/docker-examples
 
 ### build
+To build the example Dockerfile locally:
 ```
 docker build -f Dockerfile -t wwlib/docker-examples:bash "."
 ```
