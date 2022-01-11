@@ -2,12 +2,12 @@
 
 ### build
 ```
-docker build -f Dockerfile -t bashexample:bashexample "."
+docker build -f Dockerfile -t wwlib/docker-examples:bash "."
 ```
 
 ### run
 ```
-docker run -it bashexample:bashexample
+docker run -it wwlib/docker-examples:bash
 ```
 
 This will start a bash prompt, like:
